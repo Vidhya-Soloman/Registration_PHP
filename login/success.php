@@ -19,7 +19,8 @@ if(mysqli_num_rows($cq))
 $row=mysqli_fetch_assoc($cq);
 echo "<table border='1' bgcolor='#b1e6c7' align='center'><tr>";
 echo "<th>Name</th><th>email</th><th>phone</th></tr>";
-echo "<tr><td>".$row["name"]."<td>";
+echo "<tr><td>".$row["ktuid"]."</td>";
+echo "<td>".$row["name"]."<td>";
 echo $row["email"]."<td>";
 echo $row["phone"]."<td>";
 ?>

@@ -8,6 +8,8 @@
 <h2 align="center"><i>STUDENT REGISTRATION</i></h2><br>
 </div><br><br>
 <table border="1" align="center">
+<th>Ktu id</th>
+<td><input type="textbox" name="ktuid"></input></td></tr>
 <tr>
 <th>Name</th>
 <td><input type="textbox" name="name"></input></td></tr>
@@ -36,12 +38,13 @@ if($con)
 {
 echo "connected to database";
 }
+$ktuid=$_POST['ktuid'];
 $name=$_POST['name'];
 $email=$_POST['email'];
 $phone=$_POST['phone'];
 $password=$_POST['password'];
 $repassword=$_POST['repassword'];
-$q="insert into student values('$name','$email','$phone','$password','$repassword')";
+$q="insert into student values('$ktuid','$name','$email','$phone','$password','$repassword')";
 $cq=mysqli_query($con,$q);
 if($cq)
 { 
