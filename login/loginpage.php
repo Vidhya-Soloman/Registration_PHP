@@ -6,7 +6,7 @@
 <h1 align="center">LOGIN</h1></div>
 <br><br>
 <table border="1" align="center" cellpadding=20 bgcolor="#b0d4c8">
-<tr><th>Ktu id:</th>
+<tr><th>Ktu id</th>
 <td><input type="textbox" name="ktuid"></input></td></tr>
 <tr><th>Name</th>
 <td><input type="textbox" name="name"></input></td></tr>
